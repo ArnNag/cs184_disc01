@@ -11,6 +11,7 @@ Filter::Filter(const std::string& filename) {
 }
 
 void Filter::read(std::string filename) {
+	width = height = 3;
 	// FIXME
 }
 
