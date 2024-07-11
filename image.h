@@ -5,6 +5,7 @@
 #include <vector> // Standard Template Library extendable array class
 #include <string>
 #include <fstream>
+#include <cstdint>
 
 #include "filter.h"
 
