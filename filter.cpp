@@ -2,7 +2,7 @@
 
 
 Filter::Filter() {
-	width = height = 2;
+	width = height = 1;
 	kernel = {1.f};
 }
 

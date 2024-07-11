@@ -34,10 +34,7 @@ int main(int argc, char* argv[]) {
 	// the stream's buffer out to the console.
 	cout << "written in C++" << endl;
 
-	Filter donkey;
-	cout << donkey.width << endl;
-
-	// argc counts the number of command line arguments, including the
+	// argc counts the number of command line arguments, including the 
 	// name of the program.
 	if (argc < 3) {
 		cout << "Usage: ./convolve img.png filter.filt" << endl;
@@ -45,7 +42,8 @@ int main(int argc, char* argv[]) {
 	}
 
 	Image image(argv[1]);
-	Image filtered = image * donkey;
+	Filter filter(argv[2]);
+	Image filtered = image * filter;
 	filtered.write("filtered.png");
 
 	return 0;
