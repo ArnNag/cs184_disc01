@@ -11,7 +11,12 @@ Filter::Filter(const std::string& filename) {
 }
 
 void Filter::read(std::string filename) {
-	// FIXME
+	std::ifstream mystream(filename);
+	mystream >> width >> height;
+	kernel = std::vector<float>(width * height, float(0));
+	for (int i = 0; i < width * height; i++) {
+		mystream >> kernel[i];
+	}
 }
 
 void Filter::normalize() {
