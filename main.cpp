@@ -34,6 +34,9 @@ int main(int argc, char* argv[]) {
 	// the stream's buffer out to the console.
 	cout << "written in C++" << endl;
 
+	Filter donkey;
+	cout << donkey.kernel[0] << endl;
+
 	// argc counts the number of command line arguments, including the 
 	// name of the program.
 	if (argc < 3) {
